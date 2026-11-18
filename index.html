@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumble — Daily Number Puzzle</title>
+<meta name="description" content="Sumble is a daily number puzzle for iPhone. Combine six numbers to reach the target. One new puzzle every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #2d6396;
+    --blue-deep: #204670;
+    --teal: #45b8c6;
+    --orange: #e4762f;
+    --yellow: #f0b93e;
+    --ink: #1d2733;
+    --muted: #65707e;
+    --bg: #f0f5fb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', -apple-system, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px; flex: 1; }
+
+  .mark {
+    width: 84px; height: 84px; border-radius: 22px; overflow: hidden;
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+    box-shadow: 0 8px 24px rgba(32,70,112,.22); margin-bottom: 22px;
+  }
+  .mark div { display: grid; place-items: center; color: #fff; font-size: 23px; font-weight: 800; }
+  .q1 { background: var(--teal); }
+  .q2 { background: var(--orange); }
+  .q3 { background: var(--yellow); }
+  .q4 { background: var(--blue); }
+
+  h1 { font-size: 34px; font-weight: 800; letter-spacing: -.4px; }
+  .tagline { font-size: 18px; color: var(--muted); font-weight: 600; margin-top: 4px; }
+
+  h2 { font-size: 19px; font-weight: 800; margin: 36px 0 10px; }
+  p { margin-bottom: 14px; }
+  ul { margin: 0 0 14px 20px; }
+  li { margin-bottom: 7px; }
+
+  .cta {
+    display: inline-block; margin-top: 26px;
+    background: var(--blue); color: #fff; text-decoration: none;
+    font-weight: 800; font-size: 16px;
+    padding: 13px 26px; border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(45,99,150,.3);
+  }
+  .cta:hover { background: var(--blue-deep); }
+
+  a { color: var(--blue); }
+
+  footer {
+    border-top: 1px solid #dbe4ef;
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="mark">
+    <div class="q1">+</div><div class="q2">×</div>
+    <div class="q3">−</div><div class="q4">÷</div>
+  </div>
+
+  <h1>Sumble</h1>
+  <p class="tagline">A daily number puzzle for iPhone.</p>
+
+  <p style="margin-top:22px">Six numbers. One target. Combine them with
+  <strong>+ − × ÷</strong> until you land on it exactly. You don't have to use
+  every number, and fewer moves is better.</p>
+
+  <p>Everyone in the world gets the same puzzle each day, and every weekday
+  plays a little differently — some days the division button is switched off,
+  some days the numbers are large, Sundays take five moves.</p>
+
+  <h2>Four ways to play</h2>
+  <ul>
+    <li><strong>Daily</strong> — one puzzle a day, build a streak</li>
+    <li><strong>Practice</strong> — endless puzzles, three difficulties</li>
+    <li><strong>Rush</strong> — how many can you solve in two minutes?</li>
+    <li><strong>Challenge</strong> — send a friend a code and you both get the same puzzle</li>
+  </ul>
+
+  <h2>Good to know</h2>
+  <ul>
+    <li>Plays offline — puzzles are generated on your phone</li>
+    <li>No account, no sign-up</li>
+    <li>Home screen widget with today's target</li>
+    <li>Game Center leaderboards</li>
+    <li>Free, with ads — one purchase removes them for good</li>
+  </ul>
+
+  <a class="cta" href="https://apps.apple.com/app/id6821947180">Download on the App Store</a>
+</div>
+
+<footer>
+  <a href="https://sites.google.com/view/sumble-app/home">Privacy policy</a>·
+  <a href="mailto:sumble.dev@gmail.com">Contact</a>
+  <p style="margin-top:10px">© 2026 Aleksandra Milenković</p>
+</footer>
+
+</body>
+</html>
